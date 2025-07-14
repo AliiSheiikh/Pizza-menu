@@ -1,0 +1,8 @@
+export default function Footer() {
+
+    return(
+        <>
+        <h4>12345!</h4>
+        </>
+    )
+}

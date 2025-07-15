@@ -2,7 +2,7 @@ export default function Footer() {
 
     return(
         <>
-        <h4>12345!</h4>
+        <footer className ="footer">{new Date().toLocaleTimeString()}. We're currently open!</footer>
         </>
     )
 }

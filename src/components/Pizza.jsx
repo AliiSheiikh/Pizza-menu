@@ -1,10 +1,12 @@
-export default function Pizza(){
-
-    return(
-        <>
-        <img src="/pizzas/spinaci.jpg" alt = "pizza img"></img>
-        <h3>Pizza Spinaci</h3>
-        <p>Tomato, mozarella, spinach, and ricotta cheese</p>
-        </>
-    )
+export default function Pizza(props) {
+  return (
+    <div className="pizza">
+      <img src={props.photoName} alt={props.name}></img>
+      <div>
+        <h3>{props.name}</h3>
+        <p>{props.ingredients}</p>
+        <span>{props.price}</span>
+      </div>
+    </div>
+  );
 }
